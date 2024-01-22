@@ -8,7 +8,7 @@ public class Main {
         String ageInput = validateInput("= Enter age: ", "Age allow input only number.", "\\d+");
         int age = Integer.parseInt(ageInput);
 
-        String phoneNumber = validateInput("= Enter phone number: ", "Phone number allow input only number and just start with 0.", "0\\d{9}");
+        String phoneNumber = validateInput("= Enter phone number: ", "Phone number allow input only number and just start with 0 and must be have 9 number.", "0\\d{9}");
 
         String email = validateInput("= Enter email: ", "Wrong format. Example: phon.sobon@gmail.com", "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$");
 
